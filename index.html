@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Metadata -->
+    <title>Prompt-to-Product: Generative Assembly via Bimanual Manipulation</title>
+    <meta name="description"
+          content="Official website for Prompt-to-Product, R-AM arts and robotics special issue submission.">
+
+    <meta property="og:title" content="Prompt-to-Product: Generative Assembly via Bimanual Manipulation">
+    <meta property="og:description"
+          content="Official website for Prompt-to-Product, R-AM arts and robotics special issue submission.">
+    <meta property="og:url" content="https://prompt2product.github.io/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"/>
+    <link rel="shortcut icon" href="/favicon/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="BrickGPT"/>
+    <link rel="manifest" href="/favicon/site.webmanifest"/>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+          rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Photoswipe -->
+    <link href="https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe.min.css" rel="preload" as="style"
+          onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body id="pswp-gallery">
+<header>
+    <div class="container d-flex flex-column align-items-center py-5">
+        <div class="text-center mb-4 max-w-lg">
+            <hgroup class="mb-4">
+                <h1 class="display-4">Prompt-to-Product: Generative Assembly via Bimanual Manipulation</h1>
+                <p class="display-6 font-sans text-secondary">R-AM Submission <strong></strong></p>
+            </hgroup>
+            <div class="mb-3">
+                <ul class="list-unstyled d-flex flex-wrap justify-content-center column-gap-2 fs-5 mb-2">
+                    <li>
+                        <a class="badge text-bg-light link-body-emphasis"
+                           target="_blank" rel="author external noopener noreferrer">anonymous submission </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center column-gap-3 row-gap-2">
+        </ul>
+    </div>
+</header>
+
+<main>
+
+    <div class="bg-light text-bg-light">
+        <div class="container py-5">
+            <h2 class="text-center mb-3">Abstract</h2>
+            <p class="max-w-md mx-auto mb-4">
+                Creating assembly products demands significant
+                manual effort and expert knowledge in 1) designing the assembly
+                and 2) constructing the product. This paper introduces Prompt-to-
+                Product, an automated pipeline that generates real-world assembly
+                products from natural language prompts. Specifically, we leverage
+                LEGO bricks as the assembly platform and automate the process
+                of creating brick assembly structures. Given the user design
+                requirements, Prompt-to-Product generates physically buildable
+                brick designs, and then leverages a bimanual robotic system to
+                construct the real assembly products, bringing user imaginations
+                into the real world. We conduct a comprehensive user study,
+                and the results demonstrate that Prompt-to-Product significantly
+                lowers the barrier and reduces manual effort in creating assembly
+                products from imaginative ideas.
+            </p>
+        </div>
+    </div>
+
+        <div class="container py-5">
+        <h2 class="text-center fs-1 mb-4">User Study Results</h2>
+        <p class="text-center mb-5">Interactive 3D models of selected designs and products generated from our user study</p>
+        
+        <h2 class="text-center fs-3 mb-4">BrickGPT-Only</h2>
+        <p class="text-center text-muted mb-4">LEGO structures generated by BrickGPT++</p>
+
+        <div class="container-fluid text-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Guitar Models -->
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/brickgpt_cf206c2c_1_a_classical_guitar_seed8.glb"
+                                    alt="A classical guitar"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <figcaption class="mt-2"><strong>"A classical guitar"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/brickgpt_c39c74af_1_a_sharply_contoured_guitar_wit_seed42.glb"
+                                    alt="A sharply contoured guitar with a V-shaped body"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <figcaption class="mt-2"><strong>"A sharply contoured guitar with a V-shaped body"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+
+                <!-- Sofa Models -->
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/brickgpt_cf206c2c_3_a_basic_sofa_seed0.glb"
+                                    alt="A basic sofa"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <figcaption class="mt-2"><strong>"A basic sofa"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/brickgpt_c39c74af_2_a_soft_sofa_made_of_leather_th_seed123.glb"
+                                    alt="A soft sofa made of leather"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <figcaption class="mt-2"><strong>"A soft sofa made of leather that can comfortably seat two people"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+
+                <!-- Table Models -->
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/brickgpt_cf206c2c_4_a_fancy_dining_table_seed789.glb"
+                                    alt="A fancy dining table"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <figcaption class="mt-2"><strong>"A fancy dining table"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/brickgpt_fbcf3009_2_table_with_a_long_flat_rectang_seed4.glb"
+                                    alt="Table with a long flat rectangle surface"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <figcaption class="mt-2"><strong>"Table with a long flat rectangle surface"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+
+                <!-- Bench Models -->
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/brickgpt_fbcf3009_1_bench_with_backrest_and_armres_seed4.glb"
+                                    alt="Bench with backrest and armrest"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <figcaption class="mt-2"><strong>"Bench with backrest and armrest"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/brickgpt_fbcf3009_4_a_racing_car_with_four_large_t_seed20.glb"
+                                    alt="A racing car with four large tyres and a rear wing"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <figcaption class="mt-2"><strong>"A racing car with four large tyres and a rear wing."</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+
+                <!-- sailboat Models -->
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/108c2b1b_trial_1_42.glb"
+                                    alt="small sail boat"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <figcaption class="mt-2"><strong>"small sail boat"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-4"></div>
+        <h2 class="text-center fs-3 mb-4">Full Prompt-to-Product Pipeline</h2>
+        <p class="text-center text-muted mb-4">End-to-end results with both BrickGPT generation and BrickMatic assembly simulation (deterministic 10x)</p>
+
+        <div class="container-fluid text-center">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- Guitar Models with Videos -->
+                
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/fullpipeline_add479b0_1_i_want_to_build_a_lego_acousti_seed789.glb"
+                                    alt="A lego acoustic guitar"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/fullpipeline_add479b0_1_i_want_to_build_a_lego_acousti_seed789_gazebo.mp4"
+                                   class="img-fluid" style="max-height: 300px;"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"I want to build a lego acoustic guitar with brown body and black handle tips"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+
+                <!-- Classic Guitar -->
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/2b72305a_trial_1_123.glb"
+                                    alt="a super cool guitar"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/2b72305a_trial_1_123_gazebo_video.mp4"
+                                   class="img-fluid" style="max-height: 300px;"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"a super cool guitar"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+
+                <!-- Vessel Models -->
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/6382c81e_trial_1_8.glb"
+                                    alt="A double-deck vessel"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/fullpipeline_6382c81e_1_a_double-deck_vessel_with_thre_seed8_gazebo.mp4"
+                                   class="img-fluid" style="max-height: 300px;"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"A double-deck vessel with three smokestacks and a pointy front"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <figure>
+                        <model-viewer src="glbs/fullpipeline_00bb78de_2_ship_widedeck_seed8.glb"
+                                    alt="A wide-deck ship"
+                                    auto-rotate camera-controls
+                                    style="width: 100%; height: 300px; background-color: #f8f9fa;"
+                                    exposure="1.0" shadow-intensity="1">
+                        </model-viewer>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/fullpipeline_00bb78de_2_ship_widedeck_seed8_gazebo.mp4"
+                                   class="img-fluid" style="max-height: 300px;"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"I want to build a ship with wide deck"</strong><br><small class="text-muted"></small></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- BrickMatic Section -->
+    <section class="py-5" style="background-color: #f8f9fa;">
+        <h2 class="text-center fs-3 mb-4">BrickMatic Demonstrations</h2>
+        <p class="text-center text-muted mb-4">Robotic bimanual assembly systems (10x speed)</p>
+
+        <div class="container-fluid text-center">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Guitar -->
+                <div class="col">
+                    <figure>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/brickmatic/brickmatic_elongated_guitar_gen3_10x_compressed.mp4"
+                                   class="img-fluid" style="max-height: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"A guitar with elongated neck."</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
+                    </figure>
+                </div>
+
+                <!-- Sailboat -->
+                <div class="col">
+                    <figure>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/brickmatic/brickmatic_sailboat_gen3_10x_compressed.mp4"
+                                   class="img-fluid" style="max-height: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"A streamlined vessel with a long, narrow hull […]"</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
+                    </figure>
+                </div>
+
+                <!-- Bridge -->
+                <div class="col">
+                    <figure>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/brickmatic/brickmatic_bridge_small_gen3_10x_compressed.mp4"
+                                   class="img-fluid" style="max-height: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"Bridge"</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
+                    </figure>
+                </div>
+                
+                <!-- Chair -->
+                <div class="col">
+                    <figure>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/brickmatic/brickmatic_chair_10x_compressed.mp4"
+                                   class="img-fluid" style="max-height: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"Chair"</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
+                    </figure>
+                </div>
+                
+                <!-- Chair (Gen3) -->
+                <div class="col">
+                    <figure>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/brickmatic/brickmatic_chair1_gen3_10x_compressed.mp4"
+                                   class="img-fluid" style="max-height: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"Chair (Large)"</strong><br><small class="text-muted">BrickMatic-Only</small></figcaption>
+                    </figure>
+                </div>
+                
+                
+                <!-- Fish -->
+                <div class="col">
+                    <figure>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/brickmatic/brickmatic_fish_10x_compressed.mp4"
+                                   class="img-fluid" style="max-height: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"Fish"</strong><br><small class="text-muted">BrickMatic-Only</small></figcaption>
+                    </figure>
+                </div>
+                
+                <!-- Guitar (HD) -->
+                <!-- <div class="col">
+                    <figure>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/brickmatic/brickmatic_guitar_gen3_1080p_10x_compressed.mp4"
+                                   class="img-fluid" style="max-height: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"An asymmetrical six-string guitar […]"</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
+                    </figure>
+                </div> -->
+                
+                <!-- Human -->
+                <div class="col">
+                    <figure>
+                        <div class="mt-2">
+                            <video controls loop muted playsinline src="videos/brickmatic/brickmatic_human_10x_compressed.mp4"
+                                   class="img-fluid" style="max-height: 300px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></video>
+                        </div>
+                        <figcaption class="mt-2"><strong>"Human"</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
+                    </figure>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.2.0/dist/lazyload.min.js"></script>
+<script>
+    // LazyLoad
+    const lazyLoadInstance = new LazyLoad({
+        elements_selector: "video",
+        use_native: true,
+    });
+</script>
+<script type="module">
+    // PhotoSwipe
+    import PhotoSwipeLightbox from "https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js";
+
+    const lightbox = new PhotoSwipeLightbox({
+        gallery: "#pswp-gallery",
+        children: "a.pswp-img",
+        pswpModule: () => import("https://cdn.jsdelivr.net/npm/photoswipe@5.4.4/+esm"),
+    });
+    lightbox.init();
+</script>
+</body>
+
+</html>
