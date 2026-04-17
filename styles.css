@@ -54,45 +54,6 @@ h6 {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Hero montage per-clip captions: 3x2 grid matching the 3x2 video grid */
-.montage-captions {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.5rem 1.25rem;
-    color: #e9ecef;
-    font-family: var(--bs-font-sans-serif);
-    font-size: 0.95rem;
-    text-align: center;
-}
-
-.mc-cell {
-    padding: 0.35rem 0.5rem;
-    border-top: 2px solid rgba(255, 255, 255, 0.12);
-}
-
-.mc-quote { color: #f8f9fa; font-style: italic; }
-
-.mc-tag {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.12);
-    color: #dee2e6;
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 0.1rem 0.5rem;
-    border-radius: 3px;
-    margin-right: 0.35rem;
-    vertical-align: 0.08em;
-}
-
-@media (max-width: 576px) {
-    .montage-captions {
-        grid-template-columns: repeat(2, 1fr);
-        font-size: 0.85rem;
-    }
-}
-
 /* Horizontal scroll carousel for BrickMatic demos */
 .brickmatic-carousel {
     display: flex;
