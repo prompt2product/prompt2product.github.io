@@ -1,0 +1,11 @@
+.matplotlib_cache/
+
+# WSL / Windows metadata
+*:Zone.Identifier
+
+# Raw / intermediate media kept locally only
+robot_videos/
+videos/brickmatic/blurred/
+videos/brickmatic/nonblured/
+videos/failure_detection.mp4
+promt2product_teaser.gif
