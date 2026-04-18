@@ -49,7 +49,7 @@
         <div class="text-center mb-4 max-w-lg">
             <hgroup class="mb-4">
                 <h1 class="display-4">Prompt-to-Product: Generative Assembly via Bimanual Manipulation</h1>
-                <p class="fs-4 font-sans text-secondary mb-0">Accepted to <em>IEEE Robotics &amp; Automation Magazine</em></p>
+                <p class="fs-4 font-sans text-secondary mb-0"><em>IEEE Robotics &amp; Automation Magazine</em></p>
                 <p class="fs-5 font-sans text-secondary">Special Issue on Arts and Robotics</p>
             </hgroup>
             <div class="mb-3">
@@ -94,14 +94,14 @@
         <div class="container-fluid p-0 position-relative">
             <video autoplay loop muted playsinline preload="metadata"
                    src="videos/brickmatic/montage_hero.mp4"
+                   poster="posters/montage_hero.jpg"
                    class="w-100 d-block"
                    style="max-height: 70vh; object-fit: cover; background-color: #000;">
             </video>
         </div>
         <div class="container py-3 text-center">
             <p class="text-secondary font-sans mb-0 small">
-                Bimanual robot assemblies driven by natural-language prompts
-                <span class="text-muted">(10&times; speed)</span>
+                Bimanual robot assemblies by BrickMatic, 10&times; speed
             </p>
         </div>
     </section>
@@ -111,13 +111,15 @@
         <div class="container">
             <h2 class="text-center fs-1 mb-3">Overview</h2>
             <p class="text-center text-muted max-w-md mx-auto mb-4">
-                From a single natural-language prompt, Prompt-to-Product designs a physically
-                buildable LEGO model and drives a bimanual robot to construct the real, tangible
-                product &mdash; closing the loop from imagination to physical artifact.
+                From a single natural-language prompt, Prompt-to-Product designs a
+                physically buildable LEGO model and constructs the real product with a
+                bimanual robot system &mdash; closing the loop from imagination to
+                physical artifact.
             </p>
             <figure class="text-center mb-0">
                 <video autoplay loop muted playsinline preload="metadata"
                        src="promt2product_teaser.mp4"
+                       poster="posters/teaser.jpg"
                        class="img-fluid rounded shadow-sm"
                        style="max-width: 960px; width: 100%; background-color: #f8f9fa;">
                 </video>
@@ -306,79 +308,91 @@
         <div class="container">
             <h2 class="text-center fs-1 mb-3">BrickMatic Results</h2>
             <p class="text-center text-muted max-w-md mx-auto mb-5">
-                BrickMatic drives a bimanual robot through long-horizon brick assemblies
-                with closed-loop error detection and recovery. Below we highlight a
-                failure-detection episode followed by individual builds (10&times; speed).
+                BrickMatic plans and constructs the long-horizon brick assembly with
+                closed-loop execution and error detection. Below we highlight how our
+                system detects failure and recovers.
             </p>
 
             <!-- Featured: failure detection -->
             <figure class="mx-auto mb-5" style="max-width: 1000px;">
                 <video controls loop muted playsinline preload="metadata"
                        src="videos/failure_detection_compressed.mp4"
+                       poster="posters/failure_detection_compressed.jpg"
                        class="img-fluid rounded shadow-sm"
                        style="width: 100%; background-color: #000;">
                 </video>
                 <figcaption class="mt-3 text-center text-muted">
                     <strong>Closed-loop failure detection and recovery.</strong>
                     BrickMatic monitors each pick/place action; on detecting an
-                    anomaly (mis-grasp, displaced brick, or collision) it replans
-                    on-the-fly and continues the assembly without human intervention.
+                    anomaly (mis-grasp or displaced brick) it automatically pauses,
+                    alerts the human supervisor, and continues the assembly once the
+                    failure has been addressed.
                 </figcaption>
             </figure>
 
             <!-- Horizontally scrollable carousel of individual demos -->
-            <h3 class="text-center fs-4 mb-3">Individual Demonstrations</h3>
+            <h3 class="text-center fs-4 mb-3">More Assemblies from User Prompts</h3>
             <p class="text-center text-muted small mb-3">Scroll horizontally &rarr;</p>
             <div class="scroll-row">
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_elongated_guitar_gen3_10x_compressed.mp4"></video>
-                    <figcaption><strong>"A guitar with elongated neck."</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
+                           src="videos/brickmatic/brickmatic_elongated_guitar_gen3_10x_compressed.mp4"
+                           poster="posters/brickmatic_elongated_guitar_gen3_10x_compressed.jpg"></video>
+                    <figcaption><strong>&ldquo;A guitar with elongated neck.&rdquo;</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
                 </figure>
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_vessel_gen3_10x_compressed.mp4"></video>
-                    <figcaption><strong>"A streamlined vessel with a long, narrow hull&hellip;"</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
+                           src="videos/brickmatic/brickmatic_vessel_gen3_10x_compressed.mp4"
+                           poster="posters/brickmatic_vessel_gen3_10x_compressed.jpg"></video>
+                    <figcaption><strong>&ldquo;A streamlined vessel with a long, narrow hull&hellip;&rdquo;</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
                 </figure>
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_guitar_0819_10x_compressed.mp4"></video>
-                    <figcaption><strong>"An asymmetrical six-string guitar&hellip;"</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
+                           src="videos/brickmatic/brickmatic_guitar_0819_10x_compressed.mp4"
+                           poster="posters/brickmatic_guitar_0819_10x_compressed.jpg"></video>
+                    <figcaption><strong>&ldquo;An asymmetrical six-string guitar&hellip;&rdquo;</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
                 </figure>
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_sofa_gen3_10x_compressed.mp4"></video>
-                    <figcaption><strong>"A soft sofa made of leather&hellip;"</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
+                           src="videos/brickmatic/brickmatic_sofa_gen3_10x_compressed.mp4"
+                           poster="posters/brickmatic_sofa_gen3_10x_compressed.jpg"></video>
+                    <figcaption><strong>&ldquo;A soft sofa made of leather&hellip;&rdquo;</strong><br><small class="text-muted">Full Prompt-to-Product</small></figcaption>
                 </figure>
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_fish_10x_compressed.mp4"></video>
-                    <figcaption><strong>"Fish"</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
+                           src="videos/brickmatic/brickmatic_fish_10x_compressed.mp4"
+                           poster="posters/brickmatic_fish_10x_compressed.jpg"></video>
+                    <figcaption><strong>Pre-designed Fish</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
                 </figure>
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_faucet_gen3_10x_compressed.mp4"></video>
-                    <figcaption><strong>"Faucet"</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
+                           src="videos/brickmatic/brickmatic_faucet_gen3_10x_compressed.mp4"
+                           poster="posters/brickmatic_faucet_gen3_10x_compressed.jpg"></video>
+                    <figcaption><strong>Pre-designed Faucet</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
                 </figure>
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_bridge_small_gen3_10x_compressed.mp4"></video>
-                    <figcaption><strong>"Bridge"</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
+                           src="videos/brickmatic/brickmatic_bridge_small_gen3_10x_compressed.mp4"
+                           poster="posters/brickmatic_bridge_small_gen3_10x_compressed.jpg"></video>
+                    <figcaption><strong>Pre-designed Bridge</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
                 </figure>
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_chair_10x_compressed.mp4"></video>
-                    <figcaption><strong>"Chair"</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
+                           src="videos/brickmatic/brickmatic_chair_10x_compressed.mp4"
+                           poster="posters/brickmatic_chair_10x_compressed.jpg"></video>
+                    <figcaption><strong>Pre-designed Chair</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
                 </figure>
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_chair1_gen3_10x_compressed.mp4"></video>
-                    <figcaption><strong>"Chair (Large)"</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
+                           src="videos/brickmatic/brickmatic_chair1_gen3_10x_compressed.mp4"
+                           poster="posters/brickmatic_chair1_gen3_10x_compressed.jpg"></video>
+                    <figcaption><strong>Pre-designed Chair (Large)</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
                 </figure>
                 <figure class="scroll-card">
                     <video controls loop muted playsinline preload="metadata"
-                           src="videos/brickmatic/brickmatic_human_10x_compressed.mp4"></video>
-                    <figcaption><strong>"Human"</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
+                           src="videos/brickmatic/brickmatic_human_10x_compressed.mp4"
+                           poster="posters/brickmatic_human_10x_compressed.jpg"></video>
+                    <figcaption><strong>Pre-designed Human</strong><br><small class="text-muted">BrickMatic-only</small></figcaption>
                 </figure>
             </div>
         </div>
@@ -403,6 +417,161 @@
 }</code></pre>
         </div>
     </section>
+
+    <!-- Acknowledgement -->
+    <section class="section-ack py-5">
+        <div class="container">
+            <h2 class="text-center fs-1 mb-3">Acknowledgement</h2>
+            <p class="max-w-md mx-auto text-center mb-0">
+                The authors would like to thank Ken Goldberg, Oliver Kroemer, and
+                Jean Oh for their discussions. This work is in part supported by
+                the Manufacturing Futures Institute, Carnegie Mellon University,
+                through a grant from the Richard King Mellon Foundation.
+            </p>
+        </div>
+    </section>
+
+    <!-- Related Work -->
+    <section class="section-related py-5">
+        <div class="container">
+            <h2 class="text-center fs-1 mb-3">Related Work</h2>
+            <p class="text-center text-muted max-w-md mx-auto mb-5">
+                Prompt-to-Product builds on the following works from our group and
+                collaborators:
+            </p>
+
+            <div class="rw-list mx-auto">
+                <!-- BrickGPT -->
+                <article class="rw-card">
+                    <div class="rw-media">
+                        <video autoplay loop muted playsinline preload="metadata"
+                               src="related_work/legogpt.mp4"
+                               class="rw-img">
+                        </video>
+                    </div>
+                    <div class="rw-body">
+                        <h3 class="rw-title">
+                            <a href="https://avalovelace1.github.io/LegoGPT/" target="_blank" rel="noopener noreferrer">
+                                BrickGPT: Generating Physically Stable and Buildable LEGO Designs from Text
+                            </a>
+                        </h3>
+                        <p class="rw-authors">
+                            Ava Pun*, Kangle Deng*, Ruixuan Liu*, Deva Ramanan, Changliu Liu, Jun-Yan Zhu
+                        </p>
+                        <p class="rw-venue">ICCV 2025</p>
+                        <p class="rw-desc">
+                            An autoregressive language model that generates physically
+                            stable, buildable LEGO designs directly from natural-language
+                            descriptions &mdash; the generative designer used in
+                            Prompt-to-Product.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- BrickSim -->
+                <article class="rw-card">
+                    <div class="rw-media">
+                        <img src="related_work/BrickSim_teaser.jpg" alt="BrickSim teaser"
+                             class="rw-img" loading="lazy">
+                    </div>
+                    <div class="rw-body">
+                        <h3 class="rw-title">
+                            <a href="https://intelligent-control-lab.github.io/BrickSim/" target="_blank" rel="noopener noreferrer">
+                                BrickSim: A Simulator for Robotic Brick Assembly
+                            </a>
+                        </h3>
+                        <p class="rw-authors">
+                            Intelligent Control Lab, CMU
+                        </p>
+                        <p class="rw-venue">Project Page</p>
+                        <p class="rw-desc">
+                            A high-fidelity simulator for robotic LEGO brick assembly that
+                            supports policy and planner evaluation without physical
+                            hardware.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- APEX-MR -->
+                <article class="rw-card">
+                    <div class="rw-media">
+                        <video autoplay loop muted playsinline preload="metadata"
+                               src="related_work/apex.mp4"
+                               class="rw-img">
+                        </video>
+                    </div>
+                    <div class="rw-body">
+                        <h3 class="rw-title">
+                            <a href="https://intelligent-control-lab.github.io/APEX-MR/" target="_blank" rel="noopener noreferrer">
+                                APEX-MR: Multi-Robot Asynchronous Planning and Execution for Cooperative Assembly
+                            </a>
+                        </h3>
+                        <p class="rw-authors">
+                            Philip Huang*, Ruixuan Liu*, Shobhit Aggarwal, Changliu Liu, Jiaoyang Li
+                        </p>
+                        <p class="rw-venue">RSS 2025</p>
+                        <p class="rw-desc">
+                            Task-, motion-, and action-level planning for two arms to
+                            cooperatively assemble a shared design &mdash; the reasoning
+                            engine behind BrickMatic.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- StableLego -->
+                <article class="rw-card">
+                    <div class="rw-media">
+                        <img src="related_work/stablelego.png" alt="StableLego"
+                             class="rw-img" loading="lazy">
+                    </div>
+                    <div class="rw-body">
+                        <h3 class="rw-title">
+                            <a href="https://arxiv.org/abs/2402.10711" target="_blank" rel="noopener noreferrer">
+                                StableLego: Stability Analysis of Block Stacking Assembly
+                            </a>
+                        </h3>
+                        <p class="rw-authors">
+                            Ruixuan Liu, Kangle Deng, Ziwei Wang, Changliu Liu
+                        </p>
+                        <p class="rw-venue">IEEE RA-L 2024</p>
+                        <p class="rw-desc">
+                            Physics-based analysis of whether a stacked-brick design will
+                            stand under gravity and manipulation forces &mdash; the
+                            stability reasoner used inside BrickGPT.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- LEGO Manipulation -->
+                <article class="rw-card">
+                    <div class="rw-media">
+                        <video autoplay loop muted playsinline preload="metadata"
+                               src="related_work/lego_manipulation.mp4"
+                               class="rw-img">
+                        </video>
+                    </div>
+                    <div class="rw-body">
+                        <h3 class="rw-title">
+                            <a href="https://arxiv.org/abs/2309.02354" target="_blank" rel="noopener noreferrer">
+                                A Lightweight and Transferable Design for Robust LEGO Manipulation
+                            </a>
+                        </h3>
+                        <p class="rw-authors">
+                            Ruixuan Liu, Yifan Sun, Changliu Liu
+                        </p>
+                        <p class="rw-venue">IEEE CASE 2024</p>
+                        <p class="rw-desc">
+                            A low-cost, transferable end-effector design that lets a
+                            generic industrial arm reliably pick, place, and press-fit
+                            LEGO bricks &mdash; the hardware foundation of our bimanual
+                            system.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.2.0/dist/lazyload.min.js"></script>
